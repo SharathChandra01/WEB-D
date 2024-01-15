@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="Calculator">
+        <input class="display" readonly>
+        <div class="outline">
+            <button class="keys  operations" onclick="inputvalues('+')">+</button>
+            <button class="keys" onclick="inputvalues('7')">7</button>
+            <button class="keys" onclick="inputvalues('8')">8</button>
+            <button class="keys" onclick="inputvalues('9')">9</button>
+            <button class="keys  operations" onclick="inputvalues('-')">-</button>
+            <button class="keys" onclick="inputvalues('4')">4</button>
+            <button class="keys" onclick="inputvalues('5')">5</button>
+            <button class="keys" onclick="inputvalues('6')">6</button>
+            <button class="keys  operations" onclick="inputvalues('*')">*</button>
+            <button class="keys" onclick="inputvalues('1')">1</button>
+            <button class="keys" onclick="inputvalues('2')">2</button>
+            <button class="keys" onclick="inputvalues('3')">3</button>
+            <button class="keys  operations" onclick="inputvalues('/')">/</button>
+            <button class="keys" onclick="inputvalues('0')">0</button>
+            <button class="keys" onclick="inputvalues('.')">.</button>
+            <button class="keys  operations" onclick="calculate()">=</button> 
+            <button class="keys operations clear" onclick="Clear()">AC</button>
+        </div>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
