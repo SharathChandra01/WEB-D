@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.mainbox{
+    background-image:url(cat.jpeg) ;
+    height: 100vh;
+    background-size:cover ;
+}
+.heading{
+    /* display: inline-block; */
+    box-shadow: 0 0 6px white;
+    width: 100%;
+    height: 60px;
+}
+.heading a{
+    position: absolute;
+    line-height: 60px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 6px white;
+    left: -320px;
+    transition:all 0.5s linear;
+}
+#checkbox{
+    display: none;
+}
+.btn_one{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    cursor: pointer;
+}
+.btn_two i{
+    position: absolute;
+    color: rgba(255, 255, 255,0.5);
+    font-size: 30px;
+    line-height: 60px;
+    left: 265px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.menu ul li{
+    margin-top: 10px;
+    padding: 14px 18px;
+}
+.menu ul li a,i{
+    font-size: 20px;
+    color: white;
+}
+.menu ul li i{
+    padding-right: 2px;
+}
+.menu ul li:hover{
+    box-shadow: 0 0 6px white;
+}
+
+.social {
+    position: absolute;
+    bottom: 80px;
+    left: 25%;
+}
+.social ul i{
+    opacity: 0.3;
+    padding: 2px;
+}
+.social ul i:hover{
+    opacity: 1;
+    transform: scale(1.5,1.5);
+}
+#checkbox:checked  ~ .sidebar{
+    left: 0px;
+}
+#checkbox:checked  ~ .btn_one{
+    display: none;
+}
+.btn_one i:hover,.btn_two i:hover{
+    transform: scale(1.2,1.2);
+}
